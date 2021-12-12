@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>use of class in javascript</h2>
+    <p>hide all comments that contains class "city"</p>
+    <button onclick="myfunction()">Hide Elements</button>
+    <h2 class="city">london</h2>
+    <p>london is the capital of englang</p>
+    <h2 class="city">tokyo</h2>
+    <p>tokyo is the capital of japan</p>
+    <h2 class="city">isb</h2>
+    <p>isb is the capital of pakistan</p>
+    <script>
+        function myfunction() {
+            var x = documents.getElementsByClassName("city");
+            for (var i = 0; i > x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

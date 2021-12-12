@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+        }
+        /* Style the header */
+        
+        .header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Style the top navigation bar */
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        /* Style the topnav links */
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* Change color on hover */
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+        
+        .column.side {
+            width: 25%;
+        }
+        
+        .column.middle {
+            width: 50%;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        @media screen and (max-width:600pxx) {
+            .column.side,
+            .column.middle {
+                width: 100%
+            }
+        }
+        
+        .footer {
+            background-color: #f1f1f1;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+    <div class="topnav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <div class="row">
+        <div class="column side">
+            <h2>Side</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit... </p>
+        </div>
+        <div class="column middle">
+            <h2>Main Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda, fuga cumque cupiditate dolore inventore autem praesentium fugit ipsum velit hic quos voluptates. Necessitatibus, optio reprehenderit exercitationem consequatur vero
+                ab!
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quos possimus tempore excepturi, cupiditate itaque tempora perspiciatis, modi, sapiente numquam maiores non eos placeat? Omnis pariatur repellat consectetur quam vel!</p>
+        </div>
+        <div class="column side">
+            <h2>Side</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit....
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+
+
+</body>
+
+</html>

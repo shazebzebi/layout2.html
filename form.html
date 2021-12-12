@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>HTML Forms</h2>
+    <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" value="ali"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" value="khan"><br>
+        <input type="submit" name="submit">
+        <h2>radio button</h2>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="javascript">
+        <label for="javascript">javascript</label><br>
+        <h2>the select element</h2>
+        <p>here is selected and pre selected elements if we make selected in any cars options then that car will be diplayed on top mean its a preselected</p>
+        <label for="cars">choose a car:</label>
+        <select name="cars" id="cars">
+            <option value="corola">corola</option>
+            <option value="civic">civic</option>
+            <option value="honda">honda</option>
+            <option value="kia" selected>KIA</option>
+        </select>
+        <input type="submit">
+        <h2>visible option values</h2>
+        <label for="cars">select a car:</label>
+        <select name="cars" id="cars" size="3">
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+            <option value="kia">Kia</option>
+            <option value="corola">civic</option>
+            <option value="honda">Honda</option>
+        </select><br><br>
+        <input type="submit" name="submit">
+        <h2>select multiple choices</h2>
+        <label for="cars">select a car:</label>
+        <select name="cars" id="cars" size="3" multiple>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+            <option value="kia">Kia</option>
+            <option value="corola">civic</option>
+            <option value="honda">Honda</option>
+            <p>hold the control button to select multiple choices</p><br>
+            
+            <input type="submit">
+            <h2>textarea</h2>
+            <textarea name="message" cols="20" rows="5">ali was playing in the ground</textarea>
+            <br><br>
+            <input type="submit">
+            <h2>textarea by css</h2>
+            <textarea name="message" id="message" style="width:40px; height:100px;"></textarea>
+
+
+    </form>
+    <h2>button element</h2>
+    <button type="button" onclick="alert('Hello World!')">click me</button>
+    <h2>grouping form data with fieldset</h2>
+    <fieldset style="width: 50%;">
+        <legend>personalia</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="ali"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="lname" id="lname" value="raja"> <br><br>
+        <input type="submit" value="submit">
+    </fieldset>
+    <h2>the datalist element</h2>
+    <form>
+        <input list="crickterz" name="crickter">
+        <datalist id="crickterz">
+            <option value="Ahmad">Ahmad</option>
+            <option value="hafeez">
+            <option value="afridi">
+            <option value="imran khan">
+            <option value="babar">
+            <option value="rizwan">
+        </datalist>
+        <input type="submit">
+    </form>
+    <h2>the output element</h2>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100+
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output> 
+    <br><br> 
+    <input type="submit">
+ </form>
+ <h2>password field and reset button</h2>
+ <form>
+     <label for="username">username:</label><br>
+     <input type="text" id="username" name="username"><br>
+     <label for="pwd">password:</label><br>
+     <input type="password" name="pwd" id="pwd"><br><br>
+     <input type="submit" value="submit">
+     <input type="reset">
+
+ </form>
+ <h2>checkboxes</h2>
+ <form>
+     <input type="checkbox" id="vehicle1" name="vehicle1" value="bike">
+     <label for="vehicle1">i have a bike</label><br>
+     <input type="checkbox" name="vehicle2" id="vehicle2" value="car">
+     <label for="vehicle2">i have a car</label><br>
+     <input type="checkbox" id="vehicle3" name="vehicle3" value="boat">
+     <label for="vehicle3"> i have a boat</label><br><br>
+     <input type="submit" value="submit">
+ </form>
+ <h2>color input type</h2>
+ <form>
+ <label for="favcolor">select your fav color:</label>
+ <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+ <input type="submit" value="submit">
+ </form>
+ <h2>date field & date and time</h2>
+ <form>
+     <label for="birthday">Birthday:</label>
+     <input type="date" id="birthday" name="birthday">
+     <input type="submit" value="submit"><br><br>
+     <label for="birthdaytime">birthday(date and time)</label>
+     <input type="datetime-local" id=" birthdaytime" name="birthdaytime">
+     <input type="submit" value="submit"><br><br>
+     <h2>file upload</h2>
+     <label for="myfile">choose file</label>
+     <input type="file" id="myfile" name="myfile"><br><br>
+     <input type="submit" value="submit"><br><br>
+     <h2>month year field</h2>
+     <label for="monthyear">month and year</label>
+     <input type="month" id="monthyear" name="monthyear">
+     <input type="submit" value="submit"><br><br>
+     <label for="quantity">quantity between 1 and 5</label>
+     <input type="number" id="quantity" name="quantity" min="1" max="5">
+     <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="50">
+     <input type="submit" value="submit">
+     <h2>for time</h2>
+     <label for="timer">select a time</label>
+     <input type="time" id="timer" name="timer">
+     <input type="submit" value="submit">
+ </form>
+
+
+
+</body>
+
+</html>

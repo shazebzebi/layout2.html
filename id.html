@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #myheader {
+        background-color: lightgreen;
+        color: black;
+        padding: 50px;
+        text-align: center;
+    }
+    
+    .city {
+        background-color: lightgreen;
+        color: black;
+        padding: 30px;
+    }
+</style>
+
+<body>
+    <h2>the id attributes</h2>
+    <p>this paragraph is for id attributes</p>
+    <h1 id="myheader">My Header</h1>
+    <h2 class="city">london</h2>
+    <p>london is the capital of england</p>
+    <h2 class="city">tokyo</h2>
+    <p>tokyo is the capital of japan</p>
+
+    <p><a href="#c3">jump to chapter 3</a></p>
+    <p><a href="#c6">jump to chapter 6</a></p>
+    <h2>chapter 1</h2>
+    <p>this is chapter 1</p>
+    <h2>chapter 2</h2>
+    <p>this is chapter 2</p>
+    <h2 id="c3">chapter 3</h2>
+    <p>this is chapter 3</p>
+    <h2>chapter 4</h2>
+    <p>this is chapter 4</p>
+    <h2>chapter 5</h2>
+    <p>this is chapter 5</p>
+    <h2 id="c6">chapter 6</h2>
+    <p>this is chapter 6</p>
+
+
+    <h1 id="myHeader">Hello World!</h1>
+    <button onclick="displayResult()">Change text</button>
+
+    <script>
+        function displayResult() {
+            document.getElementById("myHeader").innerHTML = "Have a nice day!";
+        }
+    </script>
+
+</body>
+
+</html>

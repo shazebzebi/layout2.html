@@ -1,0 +1,128 @@
+                                          :link {
+                                             color: red;
+                                             text-decoration: none;
+                                         }
+                                         
+                                         a:visited {
+                                             color: green;
+                                             text-decoration: underline;
+                                             background-color: red;
+                                             padding: 14px 25px;
+                                             text-align: center;
+                                             display: inline-block;
+                                         }
+                                         
+                                         a:hover {
+                                             color: hotpink;
+                                             text-decoration: underline;
+                                         }
+                                         
+                                         a:active {
+                                             color: blue;
+                                             text-decoration: none;
+                                         }
+                                         /* a:link,
+        a:visited {
+            background-color: white;
+            color: black;
+            border: 2px solid blue;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 50px;
+        }
+        
+        a:hover,
+        a:active {
+            background-color: green;
+            color: white;
+        } */
+                                         /* ul.a {
+                       list-style-type: circle;
+                   }
+                   
+                   ul.b {
+                       list-style-type: square;
+                   }
+                   
+                   ol.c {
+                       list-style-type: upper-roman;
+                   }
+                   
+                   ol.d {
+                       list-style-type: lower-greek;
+                   }
+                   
+                   ul {
+                       list-style-image: url(download.png);
+                   } */
+                                         /* ul.a {
+                           list-style-position: inside;
+                           list-style-type: circle;
+                       }
+                       
+                       ul.b {
+                           list-style-position: outside;
+                           list-style-type: circle;
+                       }
+                       
+                       ul {
+                           list-style: circle inside url(download.png);
+                       } */
+                                         
+                                         ol {
+                                             background-color: yellow;
+                                             padding: 20px;
+                                         }
+                                         
+                                         ul {
+                                             background-color: green;
+                                             padding: 20px;
+                                         }
+                                         
+                                         ul li {
+                                             background-color: skyblue;
+                                             padding: 5px;
+                                             margin: 5px;
+                                         }
+                                         
+                                         ol li {
+                                             background-color: gray;
+                                             padding: 5px;
+                                             margin-left: 20px;
+                                         }
+                                         
+                                         #customers {
+                                             font-family: Arial, Helvetica, sans-serif;
+                                             border-collapse: collapse;
+                                             width: 100%;
+                                             border: 2px solid green;
+                                         }
+                                         
+                                         #customers td,
+                                         #customers th {
+                                             border: 1px soloid black;
+                                             padding: 8px;
+                                         }
+                                         
+                                         #customers tr:nth-child(even) {
+                                             background-color: skyblue;
+                                         }
+                                         
+                                         #customers tr:hover {
+                                             background-color: teal;
+                                         }
+                                         
+                                         #customers td,
+                                         th {
+                                             border: 1px solid black;
+                                         }
+                                         
+                                         #customers th {
+                                             padding-top: 10px;
+                                             padding-bottom: 10px;
+                                             text-align: center;
+                                             background-color: greenyellow;
+                                             color: white;
+                                         }

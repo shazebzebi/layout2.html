@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #borderimg {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(download.png) 30 round;
+        }
+        
+        #example1 {
+            background-image: url(download.png), url(images.jpg);
+            background-position: left top, right bottom;
+            background-repeat: repeat, no-repeat;
+            padding: 15px;
+        }
+        
+        .div1 {
+            border: 1px solid black;
+            height: 120px;
+            width: 150px;
+            background: url(images.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        .div2 {
+            border: 1px solid black;
+            height: 120px;
+            width: 150px;
+            background: url(images.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>the border image property </h1>
+    <p id="borderimg"> border image </p>
+    <p>here is the original image</p>
+    <img src="download.png" alt="book">
+    <h1>multiple backgrounds</h1>
+    <div id="example1">
+        <h1>lorem ipsum dolor</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab fuga harum minima dolorum vel aperiam consectetur facere veritatis? Laudantium quas cupiditate fuga numquam quos odit sunt reiciendis consectetur facere fugit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi natus sit facilis doloribus rerum voluptate quas. Tempore, praesentium facere doloremque voluptates, eveniet natus voluptatem tenetur distinctio esse hic molestias blanditiis.</p>
+    </div>
+    <img src="images.jpg" alt="flower">
+    <h1>The background-size Property</h1>
+
+    <h2>background-size: contain:</h2>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <h2>background-size: cover:</h2>
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+
+
+</body>
+
+</html>

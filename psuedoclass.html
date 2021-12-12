@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        q:lang(no) {
+            quotes: "~" "~"
+        }
+        
+        p::first-line {
+            color: red;
+            font-variant: normal;
+        }
+        
+        p::first-letter {
+            color: brown;
+            font-size: 20px;
+            font-variant: small-caps;
+        }
+        
+        p::first-line {
+            color: chartreuse;
+        }
+        
+        h1::before {
+            content: url(download.png);
+        }
+        
+        h1::after {
+            content: url(download.png);
+        }
+        
+         ::marker {
+            color: blue;
+            font-size: 20px;
+        }
+        
+         ::selection {
+            color: red;
+            background-color: crimson;
+        }
+        
+        img {
+            opacity: 0.5;
+        }
+        
+        img:hover {
+            opacity: 1;
+        }
+        
+        div.backgroud {
+            background: url(download.png) repeat;
+            border: 2px solid black;
+        }
+        
+        div.transbox {
+            margin: 30px;
+            background-color: darkgrey;
+            opacity: o.6;
+            border: 1px solid balck;
+        }
+        
+        div.transbox p {
+            margin: 5%;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque aliquid recusandae placeat cumque necessitatibus! Dicta eius libero rem ullam accusamus laborum veritatis corrupti adipisci unde impedit nisi repellat, enim
+        <ipsum class="lo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt praesentium iusto odit optio exercitationem. Voluptas distinctio sequi culpa cum amet molestiae, delectus harum. Necessitatibus similique nisi ut earum amet dicta. Lorem, ipsum dolor
+            sit amet consectetur adipisicing elit. Temporibus vitae neque quod, natus, quas illum illo molestiae quos cum unde sunt reiciendis similique quaerat ea recusandae rem architecto commodi at! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Enim, sapiente eligendi dicta qui laboriosam nihil molestias corporis, officiis aperiam ab est dolore fugiat necessitatibus libero dolor voluptate repellendus saepe cupiditate.</ipsum>
+    </p>
+    <p>some text <q lang="no"> a quote in paragraph</q> some text</p>
+    <h1>
+        this is heading
+    </h1>
+    <ul>
+        <li>tea</li>
+        <li>coffe</li>
+        <li>milk</li>
+    </ul>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol><br><br>
+    <h2>selection is for to select any element in page to see the differences</h2><br><br>
+    <h1>image opacity for different opacity type</h1>
+    <img src="download.png" alt="book"><br>
+    <div class="background">
+        <div class="transbox">
+            <p>this is some text for that is placed in the transparent box</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

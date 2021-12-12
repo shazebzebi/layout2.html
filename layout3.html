@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .header,
+        .footer {
+            background-color: gray;
+            color: white;
+            padding: 15px;
+        }
+        
+        .column {
+            float: left;
+            padding: 15px;
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .menu {
+            width: 25%;
+        }
+        
+        .content {
+            width: 75%;
+        }
+        
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menu li {
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: skyblue;
+            color: white;
+        }
+        
+        .menu li:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>lahore</h1>
+    </div>
+    <div class="clearfix">
+        <div class="column menu">
+            <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Isand</li>
+                <li>The Food</li>
+            </ul>
+        </div>
+        <div class="column content">
+            <h1>The Cityt</h1>
+            <p>lahore is the most beautiful city in pakistan here is the most beautiful places</p>
+            <p>Here you can see the beautifal mall like packages mall and emporium mall u can also visit this beautiful places</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>The Packges Mall</h1>
+    </div>
+
+
+</body>
+
+</html>
